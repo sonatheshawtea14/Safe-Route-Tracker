@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeRoute | Journey Safety</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="shield">🛡️</div>
+    <h1>SafeRoute</h1>
+    <p class="subtitle">Your journey, your safety.</p>
+
+    <label for="destination">Where are you going?</label>
+    <input id="destination" type="text" placeholder="Enter your destination">
+
+    <h2>Trusted contacts</h2>
+    <p class="hint">Add up to 5 contacts for your safety alerts.</p>
+    <div id="contacts">
+      <input type="tel" placeholder="Contact 1 phone number">
+      <input type="tel" placeholder="Contact 2 phone number">
+      <input type="tel" placeholder="Contact 3 phone number">
+      <input type="tel" placeholder="Contact 4 phone number">
+      <input type="tel" placeholder="Contact 5 phone number">
+    </div>
+
+    <p class="consent">
+      Location tracking starts only when you choose to start your journey.
+    </p>
+
+    <button id="startButton">📍 Start Journey</button>
+    <button id="stopButton" class="stop">Stop Journey</button>
+
+    <div id="status" role="status">Journey not started</div>
+    <div id="location">Your GPS location will appear here.</div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
